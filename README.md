@@ -14,10 +14,12 @@ int main() {
       scanf("%s", s);
       for (int j = 0; j<strlen(s); j++) {
          if (s[j] == 'O') {
+         
             sum += score;
             score++;
          }
          else if (s[j] == 'X') score = 1;
+         
       }
       printf("%d", sum);
    }
